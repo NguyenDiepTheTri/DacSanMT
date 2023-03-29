@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  //   quay theo chiều dọc
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  //width: 1500px;
+  width: var(--default-layout-width, 1500px);
+  // khi co nhỏ thì vẫn nằm trong trang
+  max-width: 100%;
+  padding: 0 var(--default-layout-horizontal-spacer);
+  margin-top: var(--default-layout-header-height, 60px);
+  display: flex;
+}
+
+.content {
+  // chiếm hết khoảng còn lại
+  flex: 1;
+  max-width: 100%;
+  //min-height: 1000px;
+}

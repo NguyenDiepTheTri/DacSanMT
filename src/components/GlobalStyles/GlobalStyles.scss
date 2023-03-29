@@ -1,0 +1,262 @@
+@import 'normalize.css';
+// Font chữ
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// đặt biến trong css
+:root {
+  --primary: #fe2c55;
+  --black: #000;
+  --white: #fff;
+  --text-color: #333;
+  --star-gold-color: #ffd700;
+  --border-color: #dbdbdb;
+  --font-family: 'ProximaNova', sans-serif;
+
+  //DefaultLayout
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1500px;
+  // chiều ngang
+  --default-layout-horizontal-spacer: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // hack font-size: 10px;
+  font-size: 62.5%;
+}
+
+body {
+  // cách sử dụng font dc import ở trên
+  //font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  //   tối ưu tốc độ hiển thị font
+  text-rendering: optimizeSpeed;
+  color: var(--text-color);
+  overflow-y: overlay;
+}
+
+//Scrollbar css
+// html * ăn hết dc tất cả các thẻ cho nên thẻ nào có scroll là đều dc
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(22, 24, 35, 0.06);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
+  border: none;
+  outline: none;
+}
+
+// thẻ a có href a[href]
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+//Fonts Embeb
+@font-face {
+  font-family: ProximaNova;
+  src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+  font-weight: 600;
+}
+
+// @font-face {
+//   font-family: ProximaNova;
+//   src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+//   font-weight: 400;
+// }
+
+body {
+  .tippy-box {
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    background-color: rgba(84, 84, 84, 0.92);
+  }
+
+  .tippy-arrow {
+    color: #333;
+  }
+
+  .tippy-content {
+    padding: 8px 9px;
+  }
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* căn giữa khi dùng flex */
+  display: flex;
+  animation: fadeIn linear 0.1s;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  //max-width: calc(100% - 32px);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+  /* từ kích thước 70% -> đẩy đủ */
+  --growth-from: 0.7;
+  --growth-to: 1;
+  /* căn giữa khi dùng flex */
+  margin: auto;
+  z-index: 3;
+  animation: growth linear 0.1s;
+}
+
+.modal.open {
+  display: flex;
+}
+// Grid -> Row -> Column
+
+.grid {
+  /* vói những screen có size lớn hơn 1200 thì size tối đa là 1200; 
+  còn max-width thì có tác dụng giảm grid của màn hình nhỏ hơn = 1200px*/
+  width: var(--default-layout-width);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-footer {
+  /* vói những screen có size lớn hơn 1200 thì size tối đa là 1200; 
+  còn max-width thì có tác dụng giảm grid của màn hình nhỏ hơn = 1200px*/
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-full-width {
+  width: 100%;
+}
+
+.grid-row {
+  /* theo chiều mainaxit nằm ngang */
+  display: flex;
+  /* đẩy con có độ dài vượt quá .grid__row xuống hàng */
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+/* 5px cho tụi này gần nhau vô */
+
+.grid-column-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  /* 100:12 = 8.333 vì là 2 ô nên x2 = 16.6667 */
+  width: 16.6667%;
+}
+
+.grid-column-2-5 {
+  //display: inline-flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* 100:5 = 20 */
+  width: 25%;
+}
+
+.grid-column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  /* 100:5 = 20 */
+  width: 20%;
+}
+
+.grid-column-10 {
+  padding-left: 25px;
+  padding-right: 25px;
+  /* 10:12x100= 83.3333 */
+  width: 100%;
+  max-width: 100%;
+}
+
+/*nút Button style chung*/
+.btn {
+  min-width: 124px;
+  height: 34px;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  padding: 0 12px;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color);
+  /* căn giữa */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* cho số chẵn để k bị chữ cao hơn */
+  line-height: 1.6rem;
+}
+
+/* nút có size s */
+.btn.btn--size-s {
+  height: 32px;
+  font-size: 12px;
+  padding: 0 8px;
+}
+
+// Media
+// PC
+@media (min-width: 1024px) {
+}
+
+// Tablet
+@media (min-width: 740px) and (min-width: 1023px) {
+}
+
+//Mobile
+@media (max-width: 740px) {
+  .full-width {
+    width: 100%;
+  }
+
+  .s-col-full {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .s-col-full-product {
+    width: 50%;
+    padding: 5px;
+  }
+
+  .product-image-mobile {
+    width: 325px;
+  }
+}
