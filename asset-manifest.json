@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dacsanMT/static/css/main.9f958143.css",
-    "main.js": "/dacsanMT/static/js/main.aacbdde7.js",
+    "main.js": "/dacsanMT/static/js/main.536364a9.js",
     "static/js/787.4f0355a2.chunk.js": "/dacsanMT/static/js/787.4f0355a2.chunk.js",
     "static/media/ProximaNova-Semibold.woff2": "/dacsanMT/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
     "static/media/DSMT.jpg": "/dacsanMT/static/media/DSMT.a7657f8e811d4bd0726c.jpg",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/dacsanMT/static/media/logo.ca201864b3a5ac606ae7ba58447e2224.svg",
     "index.html": "/dacsanMT/index.html",
     "main.9f958143.css.map": "/dacsanMT/static/css/main.9f958143.css.map",
-    "main.aacbdde7.js.map": "/dacsanMT/static/js/main.aacbdde7.js.map",
+    "main.536364a9.js.map": "/dacsanMT/static/js/main.536364a9.js.map",
     "787.4f0355a2.chunk.js.map": "/dacsanMT/static/js/787.4f0355a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f958143.css",
-    "static/js/main.aacbdde7.js"
+    "static/js/main.536364a9.js"
   ]
 }
