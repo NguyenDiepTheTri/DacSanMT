@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dacsanMT/static/css/main.98359991.css",
-    "main.js": "/dacsanMT/static/js/main.33d3cdb6.js",
+    "main.css": "/dacsanMT/static/css/main.f081b96a.css",
+    "main.js": "/dacsanMT/static/js/main.dc59cf4b.js",
     "static/js/787.4f0355a2.chunk.js": "/dacsanMT/static/js/787.4f0355a2.chunk.js",
     "static/media/ProximaNova-Semibold.woff2": "/dacsanMT/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
     "static/media/DSMT.jpg": "/dacsanMT/static/media/DSMT.a7657f8e811d4bd0726c.jpg",
     "static/media/Proxima-Nova-Regular.woff2": "/dacsanMT/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
     "static/media/logo.svg": "/dacsanMT/static/media/logo.ca201864b3a5ac606ae7ba58447e2224.svg",
     "index.html": "/dacsanMT/index.html",
-    "main.98359991.css.map": "/dacsanMT/static/css/main.98359991.css.map",
-    "main.33d3cdb6.js.map": "/dacsanMT/static/js/main.33d3cdb6.js.map",
+    "main.f081b96a.css.map": "/dacsanMT/static/css/main.f081b96a.css.map",
+    "main.dc59cf4b.js.map": "/dacsanMT/static/js/main.dc59cf4b.js.map",
     "787.4f0355a2.chunk.js.map": "/dacsanMT/static/js/787.4f0355a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98359991.css",
-    "static/js/main.33d3cdb6.js"
+    "static/css/main.f081b96a.css",
+    "static/js/main.dc59cf4b.js"
   ]
 }
